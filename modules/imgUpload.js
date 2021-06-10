@@ -5,12 +5,12 @@ const dateFormat = require('dateformat')
 
 // TODO: Sesuaikan konfigurasi Storage
 const gcs = new Storage({
-    projectId: '[PROJECT ID]',
-    keyFilename: '[PATH TO SERVICE ACCOUNT KEY JSON]' //example: ./serviceaccountkey.json (file ini bisa didapatkan ketika membuat service account)
+    projectId: 'dicky-443561',
+    keyFilename: './serviceaccountkey.json' //example: ./serviceaccountkey.json (file ini bisa didapatkan ketika membuat service account)
 })
 
 // TODO: Tambahkan nama bucket yang digunakan
-const bucketName = '[BUCKET NAME]'
+const bucketName = 'backend-dicoding'
 const bucket = gcs.bucket(bucketName)
 
 function getPublicUrl(filename) {
